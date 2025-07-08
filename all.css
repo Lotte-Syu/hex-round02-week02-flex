@@ -1,0 +1,187 @@
+body {
+  font-family: "Bruno Ace SC", sans-serif;
+  line-height: 1.5;
+  a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    box-shadow: 0px 4px 4px 0px #00000040;
+      &:hover {
+        opacity: 0.8;
+        box-shadow: 0px 0px 16px 3px #9094ffe6;
+        border-radius: 35px;
+      }
+  }
+  h1 {
+    font-size: 128px;
+  }
+  h2 {
+    font-size: 40px;
+  }
+  .fs-1 {
+    font-size: 32px;
+  }
+  .fs-2 {
+    font-size: 24px;
+  }
+  .fs-3 {
+    font-size: 20px;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+  }
+}
+
+/* utility */
+.container {
+  max-width: 1296px;
+  margin: 0 auto;
+}
+.d-flex {
+  display: flex;
+}
+
+/* pages */
+.header {
+  background: #000000;
+  color: #d1d1d1;
+  padding-block: 40px;
+  ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    a{
+      padding: 15px;
+    }
+  }
+}
+.main {
+  background: #000000;
+  color: #ffffff;
+  padding-top: 72px;
+  padding-bottom: 32px;
+  .greet {
+    width: 636px;
+    padding-top: 232px;
+    padding-bottom: 192px;
+    margin-left: 24px;
+    h1 {
+      color: #00ffa3;
+      text-align: end;
+    }
+    a {
+      background-color: #ffffff;
+      padding: 12px 24px;
+      border-radius: 32px;
+      color: #000000;
+      max-width: 185px;
+      margin-left: auto;
+      gap: 4px;
+    }
+  }
+}
+.section-intro {
+  background-image: url(./img-week2/background-img.png);
+  padding-top: 160px;
+  padding-bottom: 148px;
+  .intro-content {
+    max-width: 526px;
+    color: #ffffff;
+    margin-right: 30px;
+    h2 {
+      font-size: 64px;
+      margin-bottom: 36px;
+    }
+    p {
+      margin-bottom: 32px;
+    }
+  }
+  .intro-img {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+  }
+}
+.section-about-me {
+  padding-block: 160px;
+  justify-content: space-between;
+  align-items: center;
+  .card-group {
+    max-width: 636px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    .card {
+      width: calc(50% - 12px);
+      .card-style {
+        padding: 16px;
+        border: 1px solid #e3e3e3;
+        box-shadow: 4px 4px 4px 0px #00000014;
+      }
+    }
+  }
+  .content {
+    max-width: 526px;
+    h2 {
+      font-size: 64px;
+      margin-bottom: 36px;
+    }
+  }
+}
+.contact-me {
+  background: linear-gradient(to bottom, #050014 0%, #01021ee3 100%);
+  padding-block: 127px;
+  .container {
+    justify-content: space-between;
+    align-items: center;
+  }
+  h2 {
+    color: #ffffff;
+    font-size: 64px;
+    margin-right: 16px;
+  }
+  .arrow {
+    width: 100px;
+    height: 100px;
+  }
+  .img-group {
+    max-width: 526px;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+  }
+}
+.my-project{
+  padding-block: 160px;
+  h2{
+    font-size: 64px;
+    max-width: 746px;
+    margin-left: auto;
+    margin-bottom: 16px;
+  }
+  .projects-img > img{
+    margin-right: 24px;
+  }
+  .img-group-right{
+    .img-right-top{
+      margin-bottom: 24px;
+      img{
+        margin-right: 24px;
+      }
+    }
+    .img-right-bottom{
+      gap: 24px;
+    }
+  }
+}
+.footer {
+  background-color: #000000;
+  color: #ffffff;
+  padding-block: 37px;
+  p {
+    text-align: center;
+  }
+}
